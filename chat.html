@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whatsapp da Shoopee</title>
+
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <div class="container-chat">
+        <button class="logout" onclick="logout()">Logout</button>
+        <h1 class="header-chat">WhatsApp da Shoopee
+            <sup><img src="logo.png" class="logo"></sup>
+        </h1>
+        <div id="output"></div>
+        
+
+    </div><br>
+        
+        <div class="div-mensagem" autofocus>
+            <label>Escreva sua mensagem</label>
+            <input type="text" id="mensagem" class="form-control" placeholder="Mensagem">
+            <button onclick="send()" id="sendButton">Enviar</button>
+        </div>
+    </div>
+    <script src="chat.js"></script>
+</body>
+</html>

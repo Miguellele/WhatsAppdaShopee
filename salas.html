@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salas da Shopee</title>
+
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+    <div class="container">
+        <img class="logoShoppe" src="shopee.jpg"></img>
+        
+        <div class="content">
+            <button class="logout" onclick="logout()">Logout</button>
+            <div class="header">
+                <h1>WhatsApp da Shoopee</h1>
+                <img src="logo.png" class="logo">
+            </div>
+        </div>
+        <div class="criarSalas">
+            <h3>Bem-vindo(a) <span id="nomeUsuario"></span>!!</h3>
+            <input type="text" id="nomeSala" placeholder="Nome da Sala">
+            <button  onclick="criarSala()">Criar sala</button>
+        </div>
+        <h3>Salas Existentes</h3>
+        <div id="salasExistentes">
+            <div></div><hr>
+        </div>
+
+    </div>
+
+    <script src="sala.js"></script>
+</body>
+</html>
